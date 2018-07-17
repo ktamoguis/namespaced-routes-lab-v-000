@@ -22,6 +22,10 @@ edit_admin_preference GET    /admin/preferences/:id/edit(.:format)   admin/prefe
                       POST   /songs(.:format)                        songs#create
              new_song GET    /songs/new(.:format)                    songs#new
             edit_song GET    /songs/:id/edit(.:format)               songs#edit
+                  song GET    /songs/:id(.:format)                    songs#show
+                      PATCH  /songs/:id(.:format)                    songs#update
+                      PUT    /songs/:id(.:format)                    songs#update
+                      DELETE /songs/:id(.:format)                    songs#destroy
 
 ## Objectives
 
