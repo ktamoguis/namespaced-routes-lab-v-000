@@ -1,5 +1,14 @@
 # Namespaced Routes Lab
 
+admin_preferences GET    /admin/preferences(.:format)            admin/preferences#index
+                      POST   /admin/preferences(.:format)            admin/preferences#create
+ new_admin_preference GET    /admin/preferences/new(.:format)        admin/preferences#new
+edit_admin_preference GET    /admin/preferences/:id/edit(.:format)   admin/preferences#edit
+     admin_preference GET    /admin/preferences/:id(.:format)        admin/preferences#show
+                      PATCH  /admin/preferences/:id(.:format)        admin/preferences#update
+                      PUT    /admin/preferences/:id(.:format)        admin/preferences#update
+                      DELETE /admin/preferences/:id(.:format)        admin/preferences#destroy
+
 ## Objectives
 
 1. Organize controllers using a module.
